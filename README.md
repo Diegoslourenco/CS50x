@@ -1,4 +1,4 @@
-# Harvard cs50x 2020
+# Harvard CS50x 2020
 
 - The course focus on thinking algorithmically and solve programming problems efficiently;
 - Concepts like abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development;
