@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>BOOKFLIX</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">BOOKFLIX</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="books.html">Books</a>
+                <a href="author.html">Author</a>
+                <a href="awards.html">Awards</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="book-principal">
+            <div class="container">
+                <div class="image">
+                    <img src="img/purple_hibiscus.jpeg" alt="" class="img-book-principal">
+                </div>
+                <div class="text-book-principal">
+                    <h3 class="title">PURPLE HIBISCUS</h3>
+                    <h4 class="author">by Chimamanda Ngozi Adichie</h4>
+                    <p class="description">Fifteen-year-old Kambili and her older brother Jaja lead a privileged life in Enugu, Nigeria. They live in a beautiful house, with a caring family, and attend an exclusive missionary school. They're completely shielded from the troubles of the world. Yet, as Kambili reveals in her tender-voiced account, things are less perfect than they appear. Although her Papa is generous and well respected, he is fanatically religious and tyrannical at home―a home that is silent and suffocating.
+                                        As the country begins to fall apart under a military coup, Kambili and Jaja are sent to their aunt, a university professor outside the city, where they discover a life beyond the confines of their father’s authority. Books cram the shelves, curry and nutmeg permeate the air, and their cousins’ laughter rings throughout the house. When they return home, tensions within the family escalate, and Kambili must find the strength to keep her loved ones together.
+                                        Purple Hibiscus is an exquisite novel about the emotional turmoil of adolescence, the powerful bonds of family, and the bright promise of freedom.</p>
+                </div>
+                <div class="button">
+                    <button onclick="newTab();" class="button-buy">
+                        <i class="fas fa-book"></i>
+                        READ IT
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function newTab()
+        {
+            window.open("https://www.amazon.com.br/Purple-Hibiscus-Chimamanda-Ngozi-Adichie/dp/1616202416");
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/24b57cc7d5.js" crossorigin="anonymous"></script>
+</body>
+</html>

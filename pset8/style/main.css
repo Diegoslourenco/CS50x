@@ -1,0 +1,158 @@
+:root {
+    --red: rgb(218, 0, 0);
+    --black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* book page*/
+
+.name {
+    font-size: 40px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+
+}
+
+/*author page*/
+
+.img-author {
+    margin-left: 5%;
+}
+
+.description-author {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-left: 5%;
+}
+
+/*base elements*/
+body {
+    background: var(--black);
+    font-family: 'Arial', Times, serif;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--red);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    margin-right: 25px;
+}
+
+header nav a:hover {
+    color: rgb(7, 7, 7);
+}
+
+/*book principal*/
+.book-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)100%);
+
+    width: auto;
+    height: auto;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img-book-principal {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: auto;
+}
+
+.text-book-principal {
+    float: left;
+    width: auto;
+    font-size: 16px;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.book-principal .description {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-left: 5%;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 40px;
+    margin-left: 5%;
+    font-family: 'Trebuchet MS', Arial, sans-serif
+}
+
+.author {
+    margin-top: 2px;
+    font-size: 25px;
+    margin-left: 5%;
+    font-family: 'Trebuchet MS', Arial, sans-serif
+}
+
+button {
+    width: auto;
+    margin-right: 5%;
+}
+
+.button-buy {
+    background-color: rgba(0, 0, 0, .50);
+    border: solid whitesmoke;
+    color: white;
+
+    float: left;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    width: 120x;
+    height: auto;
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+    margin-right: 5%;
+}
+
+.button-buy:hover {
+    background-color: white;
+    color: black;
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+    display: flex;
+}
+
+.box-book {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-book {
+    margin-top: 10px;
+}
