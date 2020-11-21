@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portifolio
+{% endblock %}
+
+{% block main %}
+    <main class="container p-5">
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="4"></td>
+                    <td><b>{{total_cash}}</b></td>
+                </tr>
+            </tfoot>
+            <tbody>
+                {% if stocks %}
+                    {% for stock in stocks %}
+                        <tr>
+                            <td>{{stock.symbol}}</td>
+                            <td>{{stock.name}}</td>
+                            <td>{{stock.shares}}</td>
+                            <td>${{stock.price}}</td>
+                            <td>${{stock.total}}</td>
+                        </tr>
+                    {% endfor %}
+                {% endif %}
+
+                <tr>
+                    <td>CASH</td>
+                    <td colspan="3"></td>
+                    <td>{{cash}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+{% endblock %}
